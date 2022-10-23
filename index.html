@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>first file</title>
+        <meta charset="utf-8">
+        
+    </head>
+    <br>
+    <body>
+        <h style="color:rgb(60, 0, 255);font-size:30px;font-style:italic;">
+            ASSIGNMENT-3
+        </h>
+        <br><br>
+        <input id="text_1" type="text" placeholder="Enter a Number" style="border-color:black;width:230px;height:25px;border-radius:5px">
+        <input type="button" value="Submit" style="background-color:aqua;margin-left:40px;width:100px;height:25px;border-radius:5px" onclick="fun()">
+        <p id="P_1"></p>
+        <script>
+            function fun(){
+                var val=document.getElementById("text_1").value;
+                var flag=0;
+                for(var a=2;a<val;a++){
+                    if(val%a==0){
+                        flag=1;
+                        break;
+                    }
+                }
+                if(flag==1){
+                    document.getElementById("P_1").textContent="NO";
+                }
+                else{
+                    document.getElementById("P_1").textContent="YES";
+                }
+            }
+           
+            
+
+        </script>
+        
+        
+    </body>
+
+</html>
